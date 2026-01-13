@@ -1,0 +1,15 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f5f0 0%, #e8dcc8 100%);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5em;
+  color: var(--accent-color);
+  font-weight: 600;
+}

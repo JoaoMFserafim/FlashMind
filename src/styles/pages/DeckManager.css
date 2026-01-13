@@ -1,0 +1,243 @@
+.deck-manager-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.back-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.back-button:hover {
+  background: var(--accent-color);
+}
+
+.decks-list h1,
+.deck-editor h1 {
+  color: var(--accent-color);
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.create-button {
+  background: var(--success);
+  color: white;
+  padding: 12px 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.create-button:hover {
+  background: #27ae60;
+}
+
+.decks-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.deck-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.deck-info h3 {
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+.deck-info p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.deck-info small {
+  color: #999;
+}
+
+.deck-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.edit-btn:hover {
+  background: var(--accent-color);
+}
+
+.delete-btn {
+  background: var(--error);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.deck-editor {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.deck-input, .deck-textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 1em;
+}
+
+.deck-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.card-form {
+  background: var(--bg-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card-form h2 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.card-input, .card-textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.card-textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.add-card-btn {
+  width: 100%;
+  background: var(--success);
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.add-card-btn:hover {
+  background: #27ae60;
+}
+
+.cards-preview {
+  margin-bottom: 30px;
+}
+
+.cards-preview h2 {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.card-preview {
+  background: var(--secondary-color);
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.card-number {
+  background: var(--primary-color);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.remove-card-btn {
+  background: var(--error);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.remove-card-btn:hover {
+  background: #c0392b;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cancel-btn, .save-btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.cancel-btn {
+  background: #95a5a6;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #7f8c8d;
+}
+
+.save-btn {
+  background: var(--success);
+  color: white;
+}
+
+.save-btn:hover {
+  background: #27ae60;
+}
