@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# FlashMind
+### Transformando estudo em diversão
 
-Currently, two official plugins are available:
+**Flashcards personalizados · Sessões cronometradas · Resultados de estudo**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Explorar o código](src) · [Reportar um problema](../../issues)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## O projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Aplicação de estudo com flashcards, desenvolvida com **React, TypeScript e Vite**. Permite organizar perguntas e respostas em decks e praticar em sessões com limite de tempo.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Criar, editar e excluir decks.
+- Adicionar e remover flashcards com pergunta, resposta e imagem opcional.
+- Praticar com um temporizador de 15 segundos por pergunta.
+- Consultar o resumo de acertos, erros e tempo ao terminar a sessão.
+- Persistir decks e resultados no navegador.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tecnologias
+
+| Camada | Ferramentas |
+| --- | --- |
+| Interface | React 19 e CSS |
+| Linguagem | TypeScript |
+| Navegação | React Router |
+| Desenvolvimento | Vite e ESLint |
+| Identificadores | UUID |
+
+## Executar localmente
+
+Pré-requisito: Node.js compatível com Vite 7 (20.19+ ou 22.12+) e npm.
+
+```bash
+git clone https://github.com/JoaoMFserafim/FlashMind.git
+cd FlashMind
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Abra o endereço informado pelo Vite no terminal.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Comando | Finalidade |
+| --- | --- |
+| `npm run dev` | Iniciar o ambiente de desenvolvimento |
+| `npm run build` | Verificar TypeScript e gerar a versão de produção |
+| `npm run preview` | Visualizar a versão gerada |
+| `npm run lint` | Executar a análise estática |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Organização
+
+```text
+src/
+├── hooks/    # Temporizador e sessão de jogo
+├── pages/    # Início, editor de decks, jogo e resultados
+├── styles/   # Estilos das páginas
+├── types/    # Tipos da aplicação
+└── utils/    # Persistência e funções auxiliares
 ```
+
+## Estado atual
+
+Projeto de portfólio em evolução. A opção “Meu Desempenho” na página inicial ainda está desabilitada. Os dados ficam no navegador utilizado; não há sincronização entre dispositivos.
+
+---
+
+Desenvolvido por [JoaoMFserafim](https://github.com/JoaoMFserafim).
